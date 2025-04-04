@@ -5,6 +5,8 @@ A full-stack ToDo application with user authentication, task creation, task mana
 ## 🌐 Live Demo
 
 👉 [Click here to use the application in real-time](https://todoapplication-kqk9.onrender.com)
+> ⚠️ **Note**: The app hosted on Render may take **up to a minute to load** after prolonged inactivity.  
+> 🚀 For the best experience, please use **Google Chrome**.
 
 ---
 
