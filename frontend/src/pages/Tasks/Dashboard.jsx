@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { addNewTask, getAllTasks, deleteATask, updateATask } from "../../services/taskService";
 import Cookies from "js-cookie";
 import { ApiError } from "../../utils/ApiError";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import NavLogout from "../NavigationAfterLogin/NavLogout.jsx";
 
 export default function Dashboard() {
@@ -15,6 +15,9 @@ export default function Dashboard() {
     const [editTaskId, setEditTaskId] = useState(null);
     const [error, setError] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
+
+    const location = useLocation();
+    const fullName = location.state?.fullName;
 
     const accessToken = Cookies.get("AccessToken");
 
@@ -111,6 +114,7 @@ export default function Dashboard() {
         <NavLogout />
         <div className="container">
             <h1>Welcome to To-Do Application!</h1>
+            <h1>{fullName}</h1>
 
             <h3>Add New Task</h3>
             <div>

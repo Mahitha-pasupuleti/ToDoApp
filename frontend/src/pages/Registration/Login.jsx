@@ -43,7 +43,8 @@ export default function Login() {
             setSuccessMessage(response.message);
             setError("");
 
-            navigate("/dashboard");
+            // navigate("/dashboard");
+            navigate("/dashboard", { state: { fullName: response.data.user.fullName } });
 
         } catch (error) {
             setError(error.message);
