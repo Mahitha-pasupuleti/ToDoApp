@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, '../../frontend/dist')));
 app.use(cookieParser())
 
 // console.log(__dirname);
-console.log(path.join(__dirname, '../../frontend/dist'));
+// console.log(path.join(__dirname, '../../frontend/dist'));
 
 // routes import
 import userRouter from './routes/user.routes.js'

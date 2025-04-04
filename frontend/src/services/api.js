@@ -7,8 +7,8 @@ export const getRequest = async ( endpoint, token = null ) => {
         // console.log(token);
         if ( token == null ) throw new Error("Unauthorized request!");
         const headers = { Authorization: `Bearer ${token}` };
-        console.log(`${API_URL}${endpoint}`)
-        console.log(headers);
+        // console.log(`${API_URL}${endpoint}`)
+        // console.log(headers);
         const response = await fetch( `${API_URL}${endpoint}`, { 
             method: "GET",
             headers
@@ -32,8 +32,8 @@ export const postRequest = async ( endpoint, data = null, token = null, taskId =
         if ( token ) headers["Authorization"] = `Bearer ${token}`;
         if ( taskId ) headers["taskid"] = taskId;
         
-        console.log(`${API_URL}${endpoint}`);
-        console.log(headers);
+        // console.log(`${API_URL}${endpoint}`);
+        // console.log(headers);
         const response = await fetch(`${API_URL}${endpoint}`, {
             method: "POST",
             headers,
@@ -45,7 +45,7 @@ export const postRequest = async ( endpoint, data = null, token = null, taskId =
             throw new Error(`Error: ${response.status} ${errorData.message || 'Unknown error'}`);
         }
 
-        console.log(response)
+        // console.log(response)
 
         return await response.json();
     } catch (error) {
@@ -60,8 +60,8 @@ export const deleteRequest = async ( endpoint, data = null, token = null, taskId
         if ( token ) headers["Authorization"] = `Bearer ${token}`;
         if ( taskId ) headers["taskid"] = taskId;
         
-        console.log(`${API_URL}${endpoint}`);
-        console.log(headers);
+        // console.log(`${API_URL}${endpoint}`);
+        // console.log(headers);
         const response = await fetch(`${API_URL}${endpoint}`, {
             method: "DELETE",
             headers,
@@ -73,7 +73,7 @@ export const deleteRequest = async ( endpoint, data = null, token = null, taskId
             throw new Error(`Error: ${response.status} ${errorData.message || 'Unknown error'}`);
         }
 
-        console.log(response)
+        // console.log(response)
 
         return await response.json();
     } catch (error) {
@@ -88,8 +88,8 @@ export const putRequest = async ( endpoint, data = null, token = null, taskId = 
         if ( token ) headers["Authorization"] = `Bearer ${token}`;
         if ( taskId ) headers["taskid"] = taskId;
         
-        console.log(`${API_URL}${endpoint}`);
-        console.log(headers);
+        // console.log(`${API_URL}${endpoint}`);
+        // console.log(headers);
         const response = await fetch(`${API_URL}${endpoint}`, {
             method: "PUT",
             headers,
@@ -100,8 +100,8 @@ export const putRequest = async ( endpoint, data = null, token = null, taskId = 
             const errorData = await response.json();
             throw new Error(`Error: ${response.status} ${errorData.message || 'Unknown error'}`);
         }
-        console.log(response)
-        
+        // console.log(response)
+
         return await response.json();
     } catch (error) {
         console.error("PUT Request Error:", error);
