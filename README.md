@@ -76,6 +76,31 @@ VITE_API_URL=https://your-backend-url.com
 
 ---
 
+## 🧪 Test Users
+
+You can use the following **test user credentials** to log in directly:
+
+🔐 **User 1**
+- **Email**: `mahi@gmail.com`
+- **Password**: `Mahi@123`
+
+🔐 **User 2**
+- **Email**: `kavi@gmail.com`
+- **Password**: `Kavi@123`
+
+---
+
+## 🔐 API Routes
+- `POST /api/v1/users/signup` - Register a new user
+- `POST /api/v1/users/login` - Login
+- `POST /api/v1/users/logout` - Logout
+- `GET /api/v1/users/getTasks` - Get all user tasks
+- `POST /api/v1/users/addTask` - Add new task
+- `DELETE /api/v1/users/deleteATask` - Delete existing task
+- `PUT /api/v1/users/updateATask` - Update existing task
+
+---
+
 ## 📦 Installation & Running Locally
 
 ### 1. Clone the Repository
@@ -111,3 +136,5 @@ npm run build
 cd ../backend
 npm run dev
 ```
+
+
