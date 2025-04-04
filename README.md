@@ -10,7 +10,7 @@ A full-stack ToDo application with user authentication, task creation, task mana
 
 ## 🎥 Watch Demo Video 
 
-👉 [Click here to watch the video walkthrough](https://drive.google.com/file/d/16P7cDU2jQL9OE8Cy1hA3vNvlsiD5bCii/view?usp=sharing)
+👉 [Click here to watch the video walkthrough](https://drive.google.com/file/d/1llqp5T_LPa37VYQWbyXip6_29LcCST7B/view?usp=sharing)
 
 ---
 
