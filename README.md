@@ -68,6 +68,14 @@ REFRESH_TOKEN_EXPIRY=10d
 
 ---
 
+Create a `.env` file in the `frontend` folder:
+
+```env
+VITE_API_URL=https://your-backend-url.com
+```
+
+---
+
 ## 📦 Installation & Running Locally
 
 ### 1. Clone the Repository
