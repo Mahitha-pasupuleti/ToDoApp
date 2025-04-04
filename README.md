@@ -8,6 +8,12 @@ A full-stack ToDo application with user authentication, task creation, task mana
 
 ---
 
+## 🎥 Watch Demo Video 
+
+👉 [Click here to watch the video walkthrough](https://drive.google.com/file/d/16P7cDU2jQL9OE8Cy1hA3vNvlsiD5bCii/view?usp=sharing)
+
+---
+
 ## ✨ Features
 
 - ✅ User Registration & Login (JWT-based Auth)
